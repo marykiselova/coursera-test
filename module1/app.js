@@ -18,7 +18,7 @@
            return;
         }
 
-        var items = $scope.lunchItems.split(",", 1);
+        var items = $scope.lunchItems.split(",").filter(function(el) {return el.length != 0});
         if(items.length <= 3){
            $scope.message = "Enjoy";
            $scope.messageColor = "green";
