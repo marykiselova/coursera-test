@@ -41,6 +41,14 @@
         {
           name : "milk",
           count : 3
+        },
+        {
+          name : "bread",
+          count : 3
+        },
+        {
+          name : "soap",
+          count : 5
         }
       ];
       var boughtItems = [];
