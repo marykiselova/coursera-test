@@ -3,5 +3,8 @@
   <li ng-repeat="item in foundCtrl.items">
     {{ item.name }}
     <button ng-click="foundCtrl.onRemove({index: $index});">Remove Item</button>
+    </br>
+    {{item.description}}
+
   </li>
 </ol>
