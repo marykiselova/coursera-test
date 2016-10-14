@@ -15,6 +15,11 @@
       controller.loading = false;
 
       controller.searchItems = function(searchTerm){
+         if(searchTerm.length === 0){
+            controller.foundMenuItems = [];
+            return;
+         }
+         
          controller.loading = true;
 
          MenuSearchService.getMatchedMenuItems(searchTerm).then(function(found){
